@@ -9,12 +9,15 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Luciano Prestes Cavalcanti"]
   spec.email         = ["lucianopcbr@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Run scripts after apt install"
+  spec.description   = "Add scripts to run after install a package with APT "\
+                       "the scripts will run with the installed package as "\
+                       "argv"
+  spec.homepage      = "https://github.com/LucianoPC/posinstall"
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
+  #   Prevent pushing this gem to RubyGems.org. To allow pushes either set the
+  # 'allowed_push_host' to allow pushing to a single host or delete this
+  # section to allow pushing to any host.
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
   else
